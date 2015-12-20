@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var numberField: UITextField!
+    
+    let phone:Phone = Phone()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.phone.login()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnCall(sender: AnyObject) {
+        let params:Dictionary<String, String> = ["To": numberField.text!]
+        phone.connectWithParams(params: params)
+    }
 
+    @IBAction func hungUp(sender: AnyObject) {
+        phone.connection.disconnect()
+    }
 }
 
