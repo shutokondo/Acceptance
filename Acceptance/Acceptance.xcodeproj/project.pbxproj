@@ -15,6 +15,7 @@
 		09F000511C246A3C005252D6 /* AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F000501C246A3C005252D6 /* AcceptanceTests.swift */; };
 		09F0005C1C246A3C005252D6 /* AcceptanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0005B1C246A3C005252D6 /* AcceptanceUITests.swift */; };
 		09F0006A1C246F4A005252D6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F000691C246F4A005252D6 /* Alamofire.framework */; };
+		09F0006D1C2579E2005252D6 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0006C1C2579E2005252D6 /* Phone.swift */; };
 		9497B3846691F339F3F77B19 /* Pods_Acceptance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DFFF06716BA3E8EE658D96 /* Pods_Acceptance.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		09F0005B1C246A3C005252D6 /* AcceptanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptanceUITests.swift; sourceTree = "<group>"; };
 		09F0005D1C246A3C005252D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F000691C246F4A005252D6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		09F0006C1C2579E2005252D6 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		09F0006E1C257A46005252D6 /* Acceptance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acceptance-Bridging-Header.h"; sourceTree = "<group>"; };
 		46DFFF06716BA3E8EE658D96 /* Pods_Acceptance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acceptance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2B7A9F7C34D5AB702A28E0 /* Pods-Acceptance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance/Pods-Acceptance.debug.xcconfig"; sourceTree = "<group>"; };
 		8EE32C64AD3DBAA4C78AA070 /* Pods-Acceptance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance/Pods-Acceptance.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				09F000421C246A3C005252D6 /* Assets.xcassets */,
 				09F000441C246A3C005252D6 /* LaunchScreen.storyboard */,
 				09F000471C246A3C005252D6 /* Info.plist */,
+				09F0006C1C2579E2005252D6 /* Phone.swift */,
+				09F0006E1C257A46005252D6 /* Acceptance-Bridging-Header.h */,
 			);
 			path = Acceptance;
 			sourceTree = "<group>";
@@ -299,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
 		};
 		7B1758ECB9C278D5BB0B068D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -354,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F0003E1C246A3C005252D6 /* ViewController.swift in Sources */,
+				09F0006D1C2579E2005252D6 /* Phone.swift in Sources */,
 				09F0003C1C246A3C005252D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +501,7 @@
 			baseConfigurationReference = 8D2B7A9F7C34D5AB702A28E0 /* Pods-Acceptance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -503,6 +510,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "k-shuto.Acceptance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Acceptance/Acceptance-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -511,6 +520,7 @@
 			baseConfigurationReference = 8EE32C64AD3DBAA4C78AA070 /* Pods-Acceptance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -519,6 +529,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "k-shuto.Acceptance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Acceptance/Acceptance-Bridging-Header.h";
 			};
 			name = Release;
 		};
