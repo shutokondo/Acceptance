@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0949AF7D1C26B59C008FA230 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949AF7C1C26B59C008FA230 /* CAPSPageMenu.swift */; };
+		0949AF831C26B711008FA230 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949AF821C26B711008FA230 /* HistoryViewController.swift */; };
+		0949AF851C26BC77008FA230 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949AF841C26BC77008FA230 /* TopViewController.swift */; };
 		09F0003C1C246A3C005252D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0003B1C246A3C005252D6 /* AppDelegate.swift */; };
-		09F0003E1C246A3C005252D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0003D1C246A3C005252D6 /* ViewController.swift */; };
+		09F0003E1C246A3C005252D6 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0003D1C246A3C005252D6 /* CallViewController.swift */; };
 		09F000411C246A3C005252D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F0003F1C246A3C005252D6 /* Main.storyboard */; };
 		09F000431C246A3C005252D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F000421C246A3C005252D6 /* Assets.xcassets */; };
 		09F000461C246A3C005252D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F000441C246A3C005252D6 /* LaunchScreen.storyboard */; };
 		09F000511C246A3C005252D6 /* AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F000501C246A3C005252D6 /* AcceptanceTests.swift */; };
 		09F0005C1C246A3C005252D6 /* AcceptanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0005B1C246A3C005252D6 /* AcceptanceUITests.swift */; };
-		09F0006A1C246F4A005252D6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F000691C246F4A005252D6 /* Alamofire.framework */; };
 		09F0006D1C2579E2005252D6 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0006C1C2579E2005252D6 /* Phone.swift */; };
 		9497B3846691F339F3F77B19 /* Pods_Acceptance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DFFF06716BA3E8EE658D96 /* Pods_Acceptance.framework */; };
 /* End PBXBuildFile section */
@@ -37,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0949AF7C1C26B59C008FA230 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		0949AF821C26B711008FA230 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0949AF841C26BC77008FA230 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		09F000381C246A3C005252D6 /* Acceptance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acceptance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F0003B1C246A3C005252D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09F0003D1C246A3C005252D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09F0003D1C246A3C005252D6 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		09F000401C246A3C005252D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09F000421C246A3C005252D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09F000451C246A3C005252D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +55,6 @@
 		09F000571C246A3C005252D6 /* AcceptanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcceptanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F0005B1C246A3C005252D6 /* AcceptanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptanceUITests.swift; sourceTree = "<group>"; };
 		09F0005D1C246A3C005252D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09F000691C246F4A005252D6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		09F0006C1C2579E2005252D6 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		09F0006E1C257A46005252D6 /* Acceptance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Acceptance-Bridging-Header.h"; sourceTree = "<group>"; };
 		46DFFF06716BA3E8EE658D96 /* Pods_Acceptance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acceptance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F0006A1C246F4A005252D6 /* Alamofire.framework in Frameworks */,
 				9497B3846691F339F3F77B19 /* Pods_Acceptance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +91,6 @@
 		09F0002F1C246A3C005252D6 = {
 			isa = PBXGroup;
 			children = (
-				09F000691C246F4A005252D6 /* Alamofire.framework */,
 				09F0003A1C246A3C005252D6 /* Acceptance */,
 				09F0004F1C246A3C005252D6 /* AcceptanceTests */,
 				09F0005A1C246A3C005252D6 /* AcceptanceUITests */,
@@ -112,11 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				09F0003B1C246A3C005252D6 /* AppDelegate.swift */,
-				09F0003D1C246A3C005252D6 /* ViewController.swift */,
+				09F0003D1C246A3C005252D6 /* CallViewController.swift */,
+				0949AF841C26BC77008FA230 /* TopViewController.swift */,
+				0949AF821C26B711008FA230 /* HistoryViewController.swift */,
 				09F0003F1C246A3C005252D6 /* Main.storyboard */,
 				09F000421C246A3C005252D6 /* Assets.xcassets */,
 				09F000441C246A3C005252D6 /* LaunchScreen.storyboard */,
 				09F000471C246A3C005252D6 /* Info.plist */,
+				0949AF7C1C26B59C008FA230 /* CAPSPageMenu.swift */,
 				09F0006C1C2579E2005252D6 /* Phone.swift */,
 				09F0006E1C257A46005252D6 /* Acceptance-Bridging-Header.h */,
 			);
@@ -358,8 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F0003E1C246A3C005252D6 /* ViewController.swift in Sources */,
+				0949AF851C26BC77008FA230 /* TopViewController.swift in Sources */,
+				09F0003E1C246A3C005252D6 /* CallViewController.swift in Sources */,
 				09F0006D1C2579E2005252D6 /* Phone.swift in Sources */,
+				0949AF7D1C26B59C008FA230 /* CAPSPageMenu.swift in Sources */,
+				0949AF831C26B711008FA230 /* HistoryViewController.swift in Sources */,
 				09F0003C1C246A3C005252D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

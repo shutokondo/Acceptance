@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CallViewController: UIViewController {
     @IBOutlet weak var numberField: UITextField!
     
     let phone:Phone = Phone()
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.blackColor()
         self.phone.login()
     }
 
